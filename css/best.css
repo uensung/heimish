@@ -1,0 +1,113 @@
+.best {
+  padding-top: 82px;
+  width: 100%;
+}
+
+.best .best_titie_area {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.best .best_title_img {
+  height: 18px;
+}
+
+.best .best_content_area {
+  padding: 0px 20px;
+}
+
+/* .best .best_content_area ul {
+  font-size: 0;
+} */
+
+.best .best_content_area li {
+  margin-bottom: 40px;
+}
+
+.best .best_content_area a {
+  display: block;
+}
+
+.best .best_content_area a:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.best .best_content_area img {
+  width: 50%;
+  float: left;
+}
+
+.best .best_content_area .text_area {
+  width: 50%;
+  float: left;
+  padding-top: 60px;
+  position: relative;
+}
+
+.best .best_content_area .area01 {
+  padding-top: 60px;
+}
+
+.best .best_content_area .area02 {
+  padding-top: 100px;
+}
+
+.best .best_content_area .area03 {
+  padding-top: 10px;
+}
+
+.best .best_content_area .text_area .text_content_area:before {
+  position: absolute;
+  left: 32px;
+  top: 42px;
+  width: 90px;
+  height: 1px;
+  background: #000;
+  content: "";
+}
+
+.best .best_content_area .text_area .text_content_area:after {
+  position: absolute;
+  top: 40px;
+  width: 32px;
+  height: 7px;
+  padding: 0 5px;
+  background: #fff url('../images/best/more_icon.png') center /32px 7px no-repeat;
+  content: "";
+}
+
+.best .best_content_area .text_area .text_content_area.content01:after {
+  right: -5px;
+}
+
+.best .best_content_area .text_area .text_content_area.content02:after {
+  left: 0px;
+}
+
+.best .best_content_area .text_area .text_content_area.content03:after {
+  right: -5px;
+}
+
+.best .best_content_area .text_area img {
+  margin-left: -30px;
+  height: 30px;
+  width: 100%;
+}
+
+.best .best_content_area .text_area .text_content_area {
+  position: relative;
+}
+
+.best .best_content_area .text_area p {
+  font-family: 'NotoSans';
+  float: left;
+  margin-left: 30px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-top: 27px;
+}
