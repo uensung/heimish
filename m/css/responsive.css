@@ -1,0 +1,15 @@
+@media screen and (max-width:960px)
+{
+  .shop .shop_item_menu ul {
+    width: 100%;
+  }
+  .shop .shop_content_area {
+    width: 100%;
+  }
+}
+@media screen and (max-width:740px)
+{
+  .shop .shop_content_area li {
+    width: 50%;
+  }
+}

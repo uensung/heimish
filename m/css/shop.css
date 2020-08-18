@@ -1,0 +1,113 @@
+.shop {
+  padding-top: 82px;
+  width: 100%;
+}
+
+.shop .shop_item_menu {
+  width: 100%;
+  height: 110px;
+  background-color: #e4c1be;
+}
+
+.shop .shop_item_menu ul {
+  width: 100%;
+  font-size: 0;
+}
+
+.shop .shop_item_menu li {
+  display: inline-block;
+  width: 20%;
+}
+
+.shop .shop_item_menu a {
+  display: block;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.shop .shop_item_menu img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.shop .shop_item_menu span {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  color: #fff;
+  height: 20px;
+}
+
+.shop .shop_item_list {
+  width: 100%;
+  background-color: #fff;
+}
+
+.shop .shop_titie_area {
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+.shop .shop_titie_area h1 {
+  font-family: 'NotoSans';
+  color: #5e5f61;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.shop .shop_content_area ul {
+  padding: 0px 25px;
+  font-size: 0px;
+}
+
+.shop .shop_content_area li {
+  width: 48%;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.shop .shop_content_area li:nth-child(odd) {
+  margin-right: 8px;
+}
+
+.shop .shop_content_area .list_img {
+  width: 100%;
+}
+
+.shop .shop_content_area .list_shop_info {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.shop .shop_content_area .listName {
+  font-family: 'NotoSans';
+  line-height: 1.4;
+  font-weight: 500;
+  min-height: 42px;
+  color: #5e5f61;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.shop .shop_content_area .listPrice {
+  font-family: 'NotoSans';
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  font-weight: 300;
+  color: #5e5f61;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.shop .shop_content_area .review_cnt {
+  font-family: 'NotoSans';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.shop .shop_content_area .review_cnt img {
+  vertical-align: middle;
+  margin-right: 6px;
+  height: 15px;
+}
