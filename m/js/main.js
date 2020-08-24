@@ -1,9 +1,11 @@
-var filter = "win16|win32|win64|mac|macintel";
-if ( navigator.platform ) {
-  if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
-    window.location.href = "https://uensung.github.io/heimish/m";
+$(document).ready(function () {
+  var filter = "win16|win32|win64|mac|macintel";
+  if ( navigator.platform ) {
+    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+      window.location.href = "/heimish/m";
+    }
   }
-}
+})
 
 var swiper = new Swiper('.main .swiper-container', {
   direction: 'vertical',
