@@ -1,11 +1,12 @@
-$(document).ready(function () {
-  var filter = "win16|win32|win64|mac|macintel";
-  if ( navigator.platform ) {
-    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
-      window.location.href = "/heimish/m";
-    }
+var filter = "win16|win32|win64|mac|macintel";
+if ( navigator.platform ) {
+  if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+    window.location.replace = "/heimish/m";
   }
-})
+  else {
+    window.location.replace = "/heimish";
+  }
+}
 
 var swiper = new Swiper('.main .swiper-container', {
   direction: 'vertical',
