@@ -5,8 +5,8 @@ if ( navigator.platform ) {
     document.location = "https://uensung.github.io/heimish/m/";
   }
   else {
-    alert('pc');
-    document.location = "https://uensung.github.io/heimish/";
+    alert('1', window.location);
+    window.location.href = "https://uensung.github.io/heimish/";
   }
 }
 
