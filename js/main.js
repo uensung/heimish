@@ -4,10 +4,6 @@ if ( navigator.platform ) {
     alert('m');
     parent.window.location.href = "https://uensung.github.io/heimish/m/";
   }
-  else {
-    alert('1', window.location);
-    parent.window.location.href = "https://uensung.github.io/heimish/";
-  }
 }
 
 var swiper = new Swiper('.main .swiper-container', {
