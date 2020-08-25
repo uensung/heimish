@@ -1,15 +1,3 @@
-var filter = "win16|win32|win64|mac|macintel";
-if ( navigator.platform ) {
-  if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
-    alert('m');
-    document.location = "https://uensung.github.io/heimish/m/";
-  }
-  else {
-    alert('pc');
-    document.location = "https://uensung.github.io/heimish/";
-  }
-}
-
 var swiper = new Swiper('.main .swiper-container', {
   direction: 'vertical',
   slidesPerView: 1,
