@@ -2,11 +2,11 @@ var filter = "win16|win32|win64|mac|macintel";
 if ( navigator.platform ) {
   if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
     alert('m');
-    location.replace = "https://uensung.github.io/heimish/m/";
+    location.href = "https://uensung.github.io/heimish/m/";
   }
   else {
     alert('pc');
-    location.replace = "https://uensung.github.io/heimish/";
+    location.href = "https://uensung.github.io/heimish/";
   }
 }
 
