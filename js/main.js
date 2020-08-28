@@ -28,8 +28,9 @@ var swiper = new Swiper('.main .swiper-container', {
         $('.header').addClass('isBright');
         $('.swiper-pagination-bullet').removeClass('blackBulletBtn');
       }
-
+      console.error('7771111');
       if(idx == 7) {
+        console.error('777?');
         $('.swiper-pagination').hide();
 //         this.$wrapperEl.css({"transform": "translate3d(0px, " + now + "px, 0px)"});
         let result = getMatrix(this.$wrapperEl);
