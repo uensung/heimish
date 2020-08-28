@@ -1,3 +1,13 @@
+@media screen and (max-width:1200px)
+{
+  .header .menu {
+    display: none;
+  }
+
+  .header .gnb .hamburger {
+    display: block;
+  }
+}
 @media screen and (max-width:960px)
 {
   .shop .shop_item_menu ul {

@@ -5,7 +5,7 @@ header {
 }
 
 .header {
-  height: 72px;
+  height: 140px;
 }
 
 .header .inner {
@@ -14,28 +14,28 @@ header {
 }
 
 .header h1 {
-  background: url(../images/logo/logo_black.png) no-repeat;
+  background: url(../images/logo/logo_black.png) center center no-repeat !important;
   background-size: cover;
   text-indent: -9999px;
-  width: 106px;
-  height: 25px;
+  width: 139px;
+  height: 33px;
   position: absolute;
   top: 50%;
-  margin-top: -12px;
-  left: 20px;
+  margin-top: -25px;
+  left: 80px;
   transition: 0.5s;
 }
 
 .header.active .inner h1 {
-  background: url(../images/logo/logo_black.png) no-repeat;
+  background: url(../images/logo/logo_black.png) center center no-repeat !important;
   background-size: cover;
   text-indent: -9999px;
-  width: 106px;
-  height: 25px;
+  width: 139px;
+  height: 33px;
   position: absolute;
   top: 50%;
-  margin-top: -12px;
-  left: 20px;
+  margin-top: -25px;
+  left: 80px;
 }
 
 .header .inner a {
@@ -45,22 +45,45 @@ header {
 }
 
 .header.isBright h1 {
-  background: url(../images/logo/logo.png) no-repeat;
+  background: url(../images/logo/logo.png) center center no-repeat !important;
   background-size: cover;
   text-indent: -9999px;
-  width: 106px;
-  height: 25px;
+  width: 139px;
+  height: 33px;
   position: absolute;
   top: 50%;
-  margin-top: -12px;
-  left: 20px;
+  margin-top: -25px;
+  left: 80px;
+}
+
+.header .menu {text-align: center;}
+.header .menu ul {display: inline-block;}
+.header .menu ul:after {content: ""; display: block; clear: both;}
+
+.header .menu li {
+  float: left;
+  padding: 0 35px;
+}
+
+.header.isBright .menu a {
+  color: #fff;
+  font-size: 19px;
+  font-family: 'NotoSans';
+  line-height: 140px;
+}
+
+.header .menu a {
+  color: #5e5f61;
+  font-size: 19px;
+  font-family: 'NotoSans';
+  line-height: 140px;
 }
 
 .header .gnb {
   position: absolute;
   top: 50%;
   margin-top: -16px;
-  right: 20px;
+  right: 60px;
 }
 
 .header .gnb ul:after {content: ""; display: block; clear: both;}
@@ -112,6 +135,10 @@ header {
   background: url(../images/gnb/cart.png) no-repeat;
   background-size: auto 20px;
   background-position: center;
+}
+
+.header .gnb .hamburger {
+  display: none;
 }
 
 .header .gnb .hamburger_box {
