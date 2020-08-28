@@ -16,7 +16,8 @@ var swiper = new Swiper('.main .swiper-container', {
   },
   on: {
     slideChangeTransitionStart: function() {
-      console.error('this', $(this));
+      console.error('this', this.$wrapperEl);
+      console.error('this', this.$wrapperEl.css('transform'));
       var slide = $(this.$wrapperEl[0]).find(".mainSlide.swiper-slide-active");
       var idx   = slide.data("idx");
       if(idx == 2) {
@@ -30,6 +31,7 @@ var swiper = new Swiper('.main .swiper-container', {
 
       if(idx == 7) {
         $('.swiper-pagination').hide();
+        this.$wrapperEl.
       } else {
         $('.swiper-pagination').show();
       }
