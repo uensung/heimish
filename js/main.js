@@ -16,6 +16,7 @@ var swiper = new Swiper('.main .swiper-container', {
   },
   on: {
     slideChangeTransitionStart: function() {
+      console.error('this', $(this));
       var slide = $(this.$wrapperEl[0]).find(".mainSlide.swiper-slide-active");
       var idx   = slide.data("idx");
       if(idx == 2) {
