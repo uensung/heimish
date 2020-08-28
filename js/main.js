@@ -33,7 +33,7 @@ var swiper = new Swiper('.main .swiper-container', {
         console.error('777?');
         $('.swiper-pagination').hide();
 //         this.$wrapperEl.css({"transform": "translate3d(0px, " + now + "px, 0px)"});
-        let result = getMatrix(this.$wrapperEl);
+        let result = getMatrix(this.$wrapperEl[0]);
         console.error('result', result);
       } else {
         $('.swiper-pagination').show();
@@ -43,6 +43,7 @@ var swiper = new Swiper('.main .swiper-container', {
 });
 
 function getMatrix(element) {
+  console.error('element', element);
   const values = element.style.transform.split(/\w+\(|\);?/);
   const transform = values[1].split(/,\s?/g).map(parseInt);
 
