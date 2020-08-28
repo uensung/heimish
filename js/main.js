@@ -46,8 +46,10 @@ function getMatrix(element) {
   console.error('element', element);
   const values = element.style.transform.split(/\w+\(|\);?/);
   console.error('values', values);
+  console.error('values', values[1]);
   const transform = values[1].split(/,\s?/g);
-
+  console.error('transform', transform);
+  
   return {
     x: transform[0],
     y: transform[1],
