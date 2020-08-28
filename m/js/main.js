@@ -32,6 +32,17 @@ var swiper = new Swiper('.main .swiper-container', {
   }
 });
 
+function getTransFormData(element) {
+  const values = element.style.transform.split(/\w+\(|\);?/);
+  const transform = values[1].split(/,\s?/g);
+  
+  return {
+    x: parseInt(transform[0]),
+    y: parseInt(transform[1]),
+    z: parseInt(transform[2])
+  };
+}
+
 arr = ['[다산다라쿠션] 벨벳 커버쿠션', '[베리굿 조현 PICK]<br/>테이핑 새도우 피치코랄 ', '[베리굿 조현 PICK]<br/>데일리즘 스머지 스탑 마스카라', '벨벳 파우더 팩트']
 var swiper = new Swiper('.main .swiper-container-in', {
   slidesPerView: 1,
