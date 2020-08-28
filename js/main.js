@@ -31,7 +31,6 @@ var swiper = new Swiper('.main .swiper-container', {
 
       if(idx == 7) {
         $('.swiper-pagination').hide();
-        this.$wrapperEl.
       } else {
         $('.swiper-pagination').show();
       }
