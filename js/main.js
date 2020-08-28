@@ -35,7 +35,9 @@ var swiper = new Swiper('.main .swiper-container', {
         let result = getMatrix(this.$wrapperEl[0]);
         console.error('=====re', result.y);
         console.error('=====re', (result.y + 200));
-        this.$wrapperEl.css({"transform": "translate3d(0px, " + (result.y + 200) + "px, 0px)"});
+        let a = (result.y + 200);
+        console.error('a', a);
+        this.$wrapperEl.css({"transform": "translate3d(0px, " + a + "px, 0px)"});
 //         this.$wrapperEl.css({"transform": "translate3d(0px, " + -5500 + "px, 0px)"});
         console.error('result', result);
       } else {
