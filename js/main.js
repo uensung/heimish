@@ -34,7 +34,7 @@ var swiper = new Swiper('.main .swiper-container', {
         $('.swiper-pagination').hide();
         let result = getMatrix(this.$wrapperEl[0]);
         
-        this.$wrapperEl.css({"transform": "translate3d(0px, " + 5500 + "px, 0px)"});
+        this.$wrapperEl.css({"transform": "translate3d(0px, " + -5500 + "px, 0px)"});
         console.error('result', result);
       } else {
         $('.swiper-pagination').show();
