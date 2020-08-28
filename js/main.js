@@ -28,7 +28,7 @@ var swiper = new Swiper('.main .swiper-container', {
         $('.header').addClass('isBright');
         $('.swiper-pagination-bullet').removeClass('blackBulletBtn');
       }
-      console.error('7771111');
+      console.error('7771111', idx);
       if(idx == 7) {
         console.error('777?');
         $('.swiper-pagination').hide();
