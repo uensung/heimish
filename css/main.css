@@ -153,6 +153,14 @@
   margin-right: 20px;
 }
 
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn {
+  background-color: #000;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
 .main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fff;
   outline: 0px;
