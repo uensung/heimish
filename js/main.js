@@ -32,8 +32,9 @@ var swiper = new Swiper('.main .swiper-container', {
       if(idx == 7) {
         console.error('777?');
         $('.swiper-pagination').hide();
-//         this.$wrapperEl.css({"transform": "translate3d(0px, " + now + "px, 0px)"});
         let result = getMatrix(this.$wrapperEl[0]);
+        
+        this.$wrapperEl.css({"transform": "translate3d(0px, " + result.y + 200 + "px, 0px)"});
         console.error('result', result);
       } else {
         $('.swiper-pagination').show();
