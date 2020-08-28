@@ -3,7 +3,7 @@ var swiper = new Swiper('.main .swiper-container', {
   slidesPerView: 1,
   speed: 1000,
   mousewheel: true,
-  simulateTouch:false,
+  touchRatio: 0,
   pagination: {
     el: '.main .swiper-pagination',
     clickable: true
