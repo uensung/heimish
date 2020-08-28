@@ -31,12 +31,26 @@ var swiper = new Swiper('.main .swiper-container', {
 
       if(idx == 7) {
         $('.swiper-pagination').hide();
+//         this.$wrapperEl.css({"transform": "translate3d(0px, " + now + "px, 0px)"});
+        let result = getMatrix(this.$wrapperEl);
+        console.error('result', result);
       } else {
         $('.swiper-pagination').show();
       }
     }
   }
 });
+
+function getMatrix(element) {
+  const values = element.style.transform.split(/\w+\(|\);?/);
+  const transform = values[1].split(/,\s?/g).map(parseInt);
+
+  return {
+    x: transform[0],
+    y: transform[1],
+    z: transform[2]
+  };
+}
 
 arr = ['[다산다라쿠션] 벨벳 커버쿠션', '[베리굿 조현 PICK]<br/>테이핑 새도우 피치코랄 ', '[베리굿 조현 PICK]<br/>데일리즘 스머지 스탑 마스카라', '벨벳 파우더 팩트']
 var swiper = new Swiper('.main .swiper-container-in', {
