@@ -46,7 +46,7 @@ function getMatrix(element) {
   console.error('element', element);
   const values = element.style.transform.split(/\w+\(|\);?/);
   console.error('values', values);
-  const transform = values[1].split(/,\s?/g).map(parseInt);
+  const transform = values[1].split(/,\s?/g);
 
   return {
     x: transform[0],
