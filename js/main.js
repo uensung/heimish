@@ -16,8 +16,6 @@ var swiper = new Swiper('.main .swiper-container', {
   },
   on: {
     slideChangeTransitionStart: function() {
-      console.error('this', this.$wrapperEl);
-      console.error('this', this.$wrapperEl.css('transform'));
       var slide = $(this.$wrapperEl[0]).find(".mainSlide.swiper-slide-active");
       var idx   = slide.data("idx");
       if(idx == 2) {
@@ -28,18 +26,12 @@ var swiper = new Swiper('.main .swiper-container', {
         $('.header').addClass('isBright');
         $('.swiper-pagination-bullet').removeClass('blackBulletBtn');
       }
-      console.error('7771111', idx);
+   
       if(idx == 7) {
-        console.error('777?');
         $('.swiper-pagination').hide();
-        let result = getMatrix(this.$wrapperEl[0]);
-        console.error('=====re', result.y);
-        console.error('=====re', (result.y + 200));
-        let a = (result.y + 200);
-        console.error('a', a);
-        this.$wrapperEl.css({"transform": "translate3d(0px, " + a + "px, 0px)"});
-//         this.$wrapperEl.css({"transform": "translate3d(0px, " + -5500 + "px, 0px)"});
-        console.error('result', result);
+        var transformData = getTransFormData(this.$wrapperEl[0]);
+        let lastSlidePositionY = (transformData.y + 200);
+        this.$wrapperEl.css({"transform": "translate3d(0px, " + lastSlidePositionY + "px, 0px)"});
       } else {
         $('.swiper-pagination').show();
       }
@@ -47,13 +39,9 @@ var swiper = new Swiper('.main .swiper-container', {
   }
 });
 
-function getMatrix(element) {
-  console.error('element', element);
+function getTransFormData(element) {
   const values = element.style.transform.split(/\w+\(|\);?/);
-  console.error('values', values);
-  console.error('values', values[1]);
   const transform = values[1].split(/,\s?/g);
-  console.error('transform', transform);
   
   return {
     x: parseInt(transform[0]),
