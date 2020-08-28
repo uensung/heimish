@@ -22,6 +22,9 @@ var swiper = new Swiper('.main .swiper-container', {
 
       if(idx == 7) {
         $('.swiper-pagination').hide();
+        var transformData = getTransFormData(this.$wrapperEl[0]);
+        let lastSlidePositionY = (transformData.y + 100);
+        this.$wrapperEl.css({"transform": "translate3d(0px, " + lastSlidePositionY + "px, 0px)"});
       } else {
         $('.swiper-pagination').show();
       }
