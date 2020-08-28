@@ -51,9 +51,9 @@ function getMatrix(element) {
   console.error('transform', transform);
   
   return {
-    x: transform[0],
-    y: transform[1],
-    z: transform[2]
+    x: parseInt(transform[0]),
+    y: parseInt(transform[1]),
+    z: parseInt(transform[2])
   };
 }
 
