@@ -33,7 +33,8 @@ var swiper = new Swiper('.main .swiper-container', {
         console.error('777?');
         $('.swiper-pagination').hide();
         let result = getMatrix(this.$wrapperEl[0]);
-        
+        console.error('=====re', result.y);
+        console.error('=====re', result.y + 200);
         this.$wrapperEl.css({"transform": "translate3d(0px, " + -5500 + "px, 0px)"});
         console.error('result', result);
       } else {
