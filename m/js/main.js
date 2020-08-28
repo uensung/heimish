@@ -3,6 +3,7 @@ var swiper = new Swiper('.main .swiper-container', {
   slidesPerView: 1,
   speed: 1000,
   mousewheel: true,
+  simulateTouch:false,
   pagination: {
     el: '.main .swiper-pagination',
     clickable: true
@@ -27,10 +28,8 @@ var swiper = new Swiper('.main .swiper-container', {
         this.$wrapperEl.css({"transform": "translate3d(0px, " + lastSlidePositionY + "px, 0px)"});
         console.error('this', this);
         console.error('this', this.touchRatio);
-        this.touchRatio = 0;
       } else {
         $('.swiper-pagination').show();
-        this.touchRatio = 1;
       }
     }
   }
