@@ -48,11 +48,10 @@
 }
 
 .main .swiper-container-in {
-  height: calc(100% - 285px);
-  width: 60%;
-  position: absolute;
-  right: 0px;
-  top: 18%;
+  margin-top: 200px;
+  height: 600px;
+  width: 1200px;
+  float: right;
 }
 
 .main .swiper-container-in .swiper-slide {
@@ -123,7 +122,8 @@
   width: 160px;
   height: 50px;
   bottom: 25%;
-  left: 0px;
+  left: 90px;
+  top: 550px;
   text-align: center;
 }
 
@@ -207,7 +207,10 @@
 }
 
 .main .main_section {
-  margin-top: 340px;
+  /* margin-top: 340px; */
+  position: absolute;
+  margin-top: -150px;
+  top: 50%;
   padding: 0px 80px;
 }
 
@@ -228,10 +231,12 @@
 }
 
 .main .product_section {
-  margin-top: 350px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 320px;
   padding: 0px 100px;
-  margin-bottom: 40px;
   z-index: 20;
+  pointer-events: none;
   position: absolute;
 }
 
