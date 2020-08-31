@@ -123,7 +123,7 @@
   height: 50px;
   bottom: 25%;
   left: 90px;
-  top: 550px;
+  top: 50%;
   text-align: center;
 }
 
@@ -209,7 +209,9 @@
 .main .main_section {
   /* margin-top: 340px; */
   position: absolute;
-  margin-top: -150px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -120px;
   top: 50%;
   padding: 0px 80px;
 }
@@ -233,11 +235,12 @@
 .main .product_section {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 320px;
   padding: 0px 100px;
   z-index: 20;
   pointer-events: none;
   position: absolute;
+  top: 50%;
+  margin-top: -200px;
 }
 
 .main .product_title {
