@@ -5,8 +5,6 @@ if ( navigator.platform ) {
   }
 }
 
-console.error('확인');
-
 var swiper = new Swiper('.main .swiper-container', {
   direction: 'vertical',
   slidesPerView: 1,
