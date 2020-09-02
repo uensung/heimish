@@ -11,6 +11,7 @@ var swiper = new Swiper('.main .swiper-container', {
   speed: 1000,
   mousewheel: true,
   //touchRatio: 0,
+  allowTouchMove: 0,
   pagination: {
     el: '.main .swiper-pagination',
     clickable: true
