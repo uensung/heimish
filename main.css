@@ -1,0 +1,296 @@
+.swiper-container {width: 100%;height: 100%;}
+
+.main {
+  height: 100%;
+}
+
+.main .swiper-slide.slide01 {
+  background: url(../images/main/main_slide1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.slide03 {
+  background: url(../images/main/main_slide2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.slide04 {
+  background: url(../images/main/main_slide3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.slide05 {
+  background: url(../images/main/main_slide4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.slide06 {
+  background: url(../images/main/main_slide5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-container-in {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -280px;
+  height: 620px;
+  width: 1200px;
+}
+
+.main .swiper-container-in .swiper-slide {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.main .swiper-container-in .swiper-slide-active {
+  opacity: 1;
+}
+
+.main .swiper-slide.innerSlide01 {
+  background: url(../images/main/innerSlide/inner_slide1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.innerSlide02 {
+  background: url(../images/main/innerSlide/inner_slide2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.innerSlide03 {
+  background: url(../images/main/innerSlide/inner_slide3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .swiper-slide.innerSlide04 {
+  background: url(../images/main/innerSlide/inner_slide4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .mask_title {
+  font-size: 26px;
+  font-family: 'NotoSans';
+  font-weight: 500;
+  color: #5e5f61;
+  line-height: 1.5;
+}
+
+.main .swiper-button-prev {
+  color: #5e5f61;
+  outline: 0px;
+}
+
+.main .swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.main .swiper-button-next {
+  color: #5e5f61;
+  outline: 0px;
+}
+
+.main .swiper-button-next:after {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.main .pagenation_area {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  bottom: 25%;
+  left: 90px;
+  top: 50%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.main .swiper-pagination-fraction {
+  position: absolute;
+  z-index: 10;
+  height: 50px;
+  bottom: 0;
+  line-height: 2.5;
+  font-size: 20px;;
+  font-family: 'NotoSans';
+  color: #5e5f61;
+}
+
+.main_menu {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background-color: #fff;
+  z-index: 5;
+  opacity: 0.3;
+  transition: 0.8s;
+}
+
+.main .swiper-pagination {
+  margin-right: 50px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet {
+  opacity: 0.5;
+}
+
+
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn {
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn.swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  outline: 0px;
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn.swiper-pagination-bullet-active:after {
+  content: '';
+  background-color: #000;
+  border-radius: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.blackBulletBtn.swiper-pagination-bullet:after {
+  content: '';
+  background-color: #000;
+  border-radius: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0);
+  outline: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  outline: 0px;
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+  content: '';
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet:after {
+  content: '';
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/* .main .swiper-pagination .blackBullet.swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+  content: '';
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: -11px;
+  left: -11px;
+  outline: 0px;
+} */
+
+.main .swiper-pagination .swiper-pagination-bullet:last-child {
+  display: none;
+}
+
+.main .main_section {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -120px;
+  top: 50%;
+  padding: 0px 80px;
+}
+
+.main .main_title {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'NotoSans';
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.main .main_content {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+  font-family: 'NotoSans';
+}
+
+.main .product_section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 100px;
+  z-index: 20;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -165px;
+}
+
+.main .product_title {
+  color: #5e5f61;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'NotoSans';
+  margin-bottom: 40px;
+}
+
+.main .product_content {
+  font-size: 19px;
+  margin-bottom: 220px;
+  font-weight: 300;
+  color: #5e5f61;
+  font-family: 'NotoSans';
+}
