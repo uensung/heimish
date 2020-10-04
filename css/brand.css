@@ -1,10 +1,13 @@
 .brand {
-  padding-top: 72px;
+  padding-top: 140px;
   width: 100%;
 }
 
 .brand .brand_video_area {
   width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .brand .brand_video {
@@ -12,9 +15,8 @@
 }
 
 .brand .brand_image_area {
-  margin-top: 30px;
-  width: 100%;
-  margin-bottom: 50px;
+  margin: 30px auto 50px;
+  width: 1200px;
 }
 
 .brand img {

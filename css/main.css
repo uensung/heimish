@@ -10,10 +10,6 @@
   background-position: center;
 }
 
-.main .swiper-slide.slide02 {
-  /* position: relative; */
-}
-
 .main .swiper-slide.slide03 {
   background: url(../images/main/main_slide2.jpg) no-repeat;
   background-size: cover;
@@ -38,20 +34,13 @@
   background-position: center;
 }
 
-.main .swiper-slide.lastSlide {
-  background-color: #e4c1be;
-}
-
-.main .swiper-slide.lastSlide .footer {
-  padding: 120px 25px;
-  height: 100%;
-}
-
 .main .swiper-container-in {
-  margin-top: 210px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -280px;
   height: 620px;
-  width: 1300px;
-  float: right;
+  width: 1200px;
 }
 
 .main .swiper-container-in .swiper-slide {
@@ -87,10 +76,6 @@
   background-position: center;
 }
 
-.main .mask {
-
-}
-
 .main .mask_title {
   font-size: 26px;
   font-family: 'NotoSans';
@@ -101,6 +86,7 @@
 
 .main .swiper-button-prev {
   color: #5e5f61;
+  outline: 0px;
 }
 
 .main .swiper-button-prev::after {
@@ -110,6 +96,7 @@
 
 .main .swiper-button-next {
   color: #5e5f61;
+  outline: 0px;
 }
 
 .main .swiper-button-next:after {

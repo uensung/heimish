@@ -5,12 +5,17 @@ if ( navigator.platform ) {
   }
 }
 
+var slidePositionY;
+var transformData;
+var idx;
+var footerH;
+var resizeH;
+var tempH;
 var swiper = new Swiper('.main .swiper-container', {
   direction: 'vertical',
   slidesPerView: 1,
   speed: 1000,
   mousewheel: true,
-  //touchRatio: 0,
   allowTouchMove: 0,
   pagination: {
     el: '.main .swiper-pagination',
@@ -18,8 +23,10 @@ var swiper = new Swiper('.main .swiper-container', {
   },
   on: {
     slideChangeTransitionStart: function() {
-      var slide = $(this.$wrapperEl[0]).find(".mainSlide.swiper-slide-active");
-      var idx   = slide.data("idx");
+      var slide = $('.swiper-wrapper').find(".mainSlide.swiper-slide-active");
+      idx       = slide.data("idx");
+      transformData = getTransFormData($('.swiper-wrapper')[0]);
+      footerH       = parseInt($('.footer').css('height'));
       if(idx == 2) {
         $('.header').removeClass('isBright');
         $('.swiper-pagination-bullet').addClass('blackBulletBtn');
@@ -28,12 +35,16 @@ var swiper = new Swiper('.main .swiper-container', {
         $('.header').addClass('isBright');
         $('.swiper-pagination-bullet').removeClass('blackBulletBtn');
       }
-   
+
+      if(idx == 6) {
+        slidePositionY = transformData.y;
+      }
+
       if(idx == 7) {
         $('.swiper-pagination').hide();
-        var transformData = getTransFormData(this.$wrapperEl[0]);
-        var lastSlidePositionY = (transformData.y + 200);
-        this.$wrapperEl.css({"transform": "translate3d(0px, " + lastSlidePositionY + "px, 0px)"});
+        var lastSlidePositionY = (slidePositionY - footerH);
+        $('.swiper-wrapper').css({"transform": "translate3d(0px, " + lastSlidePositionY + "px, 0px)"});
+        tempH = $(window).innerHeight();
       } else {
         $('.swiper-pagination').show();
       }
@@ -41,10 +52,32 @@ var swiper = new Swiper('.main .swiper-container', {
   }
 });
 
+
+$(document).ready(function(){
+  $(window).resize(function(e) {
+    if(idx == 6) {
+      transformData = getTransFormData($('.swiper-wrapper')[0]);
+      slidePositionY = transformData.y;
+    }
+
+    if(idx == 7) {
+      transformData = getTransFormData($('.swiper-wrapper')[0]);
+      slidePositionY = transformData.y;
+      resizeH = $(window).innerHeight() - footerH;
+      if(tempH != $(window).innerHeight()) {
+        $('.swiper-wrapper').css({"transform": "translate3d(0px, " + (slidePositionY + resizeH) + "px, 0px)"});
+      } else {
+        $('.swiper-wrapper').css({"transform": "translate3d(0px, " + (slidePositionY) + "px, 0px)"});
+      }
+      tempH = $(window).innerHeight();
+    }
+  });
+});
+
 function getTransFormData(element) {
   const values = element.style.transform.split(/\w+\(|\);?/);
   const transform = values[1].split(/,\s?/g);
-  
+
   return {
     x: parseInt(transform[0]),
     y: parseInt(transform[1]),
@@ -63,8 +96,8 @@ var swiper = new Swiper('.main .swiper-container-in', {
     type: 'fraction',
   },
   navigation: {
-    nextEl: '.main .swiper-container-in .swiper-button-next',
-    prevEl: '.main .swiper-container-in .swiper-button-prev',
+    nextEl: '.main .pagenation_area_in .swiper-button-next',
+    prevEl: '.main .pagenation_area_in .swiper-button-prev',
   },
   on: {
     slideChangeTransitionStart: function(){

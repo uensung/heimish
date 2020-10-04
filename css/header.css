@@ -8,6 +8,10 @@ header {
   height: 140px;
 }
 
+header .isDark {
+  background-color: #fff;
+}
+
 .header .inner {
   height: 100%;
   position: relative;

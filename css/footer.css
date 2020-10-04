@@ -1,22 +1,90 @@
 .footer {
   background-color: #e4c1be;
-  padding: 25px;
+  padding: 100px 25px;
+  height: 400px;
+  box-sizing: border-box;
+  opacity: 0.7;
 }
 
-.footer .footer_menu {
+.footer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.area_company_info {
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 45%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.area_footer_menu {
+  width: 55%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.area_footer_menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer .area_footer_menusub {
+  float: left;
+  box-sizing: border-box;
+}
+
+.footer .area_footer_submenu1 {
+  width: 30%
+}
+
+.footer .area_footer_submenu2 {
+  width: 30%
+}
+
+.footer .area_footer_submenu3 {
+  width: 20%
+}
+
+.footer .area_footer_submenu4 {
+  width: 20%
+}
+
+.footer .area_footer_inner {
+  color: #fff;
+}
+
+.footer .area_footer_inner a {
+  color: #fff;
+}
+
+.area_footer_submenu2 div:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.footer .area_footer_inner .title {
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'NotoSans';
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
-.footer .footer_menu li a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+.footer .area_footer_inner .number {
+  font-size: 30px;
+  font-weight: 500;
   font-family: 'NotoSans';
-  opacity: 0.7;
-  display: block;
-  height: 20px;
-  padding: 10px 0px;
-  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.footer .area_footer_inner .content {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'NotoSans';
+  margin-bottom: 10px;
 }
 
 .footer .footer_info_menu {
@@ -31,9 +99,10 @@
 
 .footer .footer_info_menu li {
   float: left;
+  margin-right: 50px;
 }
 
-.footer .footer_info_menu li:nth-child(1) {
+/* .footer .footer_info_menu li:nth-child(1) {
   width: 18%;
 }
 
@@ -47,12 +116,12 @@
 
 .footer .footer_info_menu li:nth-child(4) {
   width: 32%;
-}
+} */
 
 .footer .footer_info_menu li a {
   color: #fff;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 900;
   font-family: 'NotoSans';
   display: block;
   height: 20px;
@@ -62,9 +131,9 @@
 .footer .address_info {
   color: #fff;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'NotoSans';
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .footer .address_info p {
@@ -72,7 +141,7 @@
 }
 
 .footer .link_sns {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .footer .link_sns:after {
@@ -86,8 +155,8 @@
 }
 
 .footer .link_sns img {
-  height: 26px;
-  margin-right: 25px;
+  height: 22px;
+  margin-right: 30px;
   cursor: pointer;
 }
 

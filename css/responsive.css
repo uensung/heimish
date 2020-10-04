@@ -7,19 +7,117 @@
   .header .gnb .hamburger {
     display: block;
   }
+
+  .main .swiper-container-in {
+    width: 100%;
+  }
+
+  .main .swiper-container-in .swiper-slide {
+    transition: opacity 1s;
+  }
+
+  .footer .footer_info_menu {
+    display: none;
+  }
+
+  .footer .link_sns {
+    display: none;
+  }
+
+  .footer .area_company_info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer .area_footer_menu {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+  .footer .area_footer_menusub {
+    float: none;
+    width: 100%;
+  }
+
+  .footer .area_footer_menusub .area_footer_inner {
+    margin-bottom: 10px;
+  }
+
+  .footer .area_footer_inner .title {
+    margin-bottom: 0px;
+  }
+
+  .footer .area_footer_menu .number {
+    display: none;
+  }
+
+  .footer .area_footer_menu .content {
+    display: none;
+  }
 }
 @media screen and (max-width:960px)
 {
   .shop .shop_item_menu ul {
     width: 100%;
   }
+
   .shop .shop_content_area {
+    width: 100%;
+  }
+
+  .brand .brand_video_area {
+    height: 40vh;
+  }
+
+  .brand .brand_image_area {
     width: 100%;
   }
 }
 @media screen and (max-width:740px)
 {
+  .main .main_title {
+    font-size: 40px;
+  }
+
+  .main .main_content {
+    font-size: 15px;
+  }
+
+  .main .product_title {
+    font-size: 40px;
+  }
+
+  .main .product_content {
+    font-size: 15px;
+  }
+
+  .main .mask_title {
+    font-size: 20px;
+  }
+
+  .shop .shop_item_menu img {
+    height: 30px;
+  }
+
+  .shop .shop_item_menu li {
+    width: 96px;
+  }
+
+  .shop .shop_item_menu a {
+    padding: 45px 0px 25px;
+  }
+
   .shop .shop_content_area li {
     width: 50%;
+  }
+
+  .brand .brand_video_area {
+    height: 30vh;
+  }
+
+  .brand .brand_image_area {
+    width: 100%;
   }
 }
